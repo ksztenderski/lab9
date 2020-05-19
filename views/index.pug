@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    style
+        include style.css
+    body
+        h1= message
+        img(src=headerMeme.url)
+        h1="Meme list"
+        ul
+            each meme in memes
+                li
+                    a(href="meme/" + meme.id)
+                        img(src=meme.url)
+                    p= 'Price: ' + meme.prices[meme.prices.length - 1]

@@ -1,0 +1,14 @@
+html
+    style
+        include style.css
+    body
+        img(src=meme.url)
+        h1="Price history"
+        table
+            each price in meme.prices
+                tr
+                    td= price
+        form(method="post")
+            input(type="text" name="price")
+            input(type="submit", value="Set")
+        a(href="/") back
