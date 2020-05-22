@@ -58,7 +58,7 @@ const most_expensive = [
         'name': 'Rewatch',
         'prices': [1455, 1670, 1500],
         'url': 'https://img-9gag-fun.9cache.com/photo/aD4wV2w_700bwp.webp'
-    },
+    }
 ]
 
 let headerMeme = {

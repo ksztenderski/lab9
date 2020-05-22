@@ -19,7 +19,11 @@ router.get('/', function (req, res, next) {
 
 router.get('/meme/:memeId', function (req, res) {
     let meme = get_meme(req.app.get('memes'), parseInt(req.params.memeId));
-    res.render('meme', {meme: meme})
+    if (meme !== undefined) {
+        res.render('meme', {meme: meme});
+    } else {
+        res.render('meme_not_found', {id: req.params.memeId});
+    }
 })
 
 router.post('/meme/:memeId', function (req, res) {
@@ -29,7 +33,7 @@ router.post('/meme/:memeId', function (req, res) {
     meme.change_price(price);
     console.log(meme.prices);
     console.log(req.body.price);
-    res.render('meme', { meme: meme })
+    res.render('meme', {meme: meme})
 })
 
 module.exports = router;
