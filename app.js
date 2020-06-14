@@ -24,37 +24,37 @@ class Meme {
 
 const most_expensive = [
     {
-        'id': 10,
+        'id': 1,
         'name': 'Gold',
         'prices': [1000],
         'url': 'https://i.redd.it/h7rplf9jt8y21.png'
     },
     {
-        'id': 9,
+        'id': 2,
         'name': 'Platinum',
         'prices': [1100],
         'url': 'http://www.quickmeme.com/img/90/90d3d6f6d527a64001b79f4e13bc61912842d4a5876d17c1f011ee519d69b469.jpg'
     },
     {
-        'id': 8,
+        'id': 3,
         'name': 'Elite',
         'prices': [1200],
         'url': 'https://i.imgflip.com/30zz5g.jpg'
     },
     {
-        'id': 7,
+        'id': 4,
         'name': 'Why',
         'prices': [1300],
         'url': 'https://i.kym-cdn.com/photos/images/original/001/492/343/782.png'
     },
     {
-        'id': 6,
+        'id': 5,
         'name': 'Avocado',
         'prices': [1400],
         'url': 'https://www.fosi.org/media/images/funny-game-of-thrones-memes-coverimage.width-800.jpg'
     },
     {
-        'id': 5,
+        'id': 6,
         'name': 'Rewatch',
         'prices': [1455, 1670, 1500],
         'url': 'https://img-9gag-fun.9cache.com/photo/aD4wV2w_700bwp.webp'

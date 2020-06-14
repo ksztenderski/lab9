@@ -8,7 +8,7 @@ html
             each price in meme.prices
                 tr
                     td= price
-        form(method="post")
+        form(action="http://localhost:3000/meme/" + meme.id method="post")
             input(type="text" name="price")
             input(type="submit", value="Set")
         a(href="/") back
