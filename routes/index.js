@@ -21,6 +21,7 @@ router.get('/meme/:memeId', function (req, res) {
     let meme = get_meme(req.app.get('memes'), parseInt(req.params.memeId));
     if (meme !== undefined) {
         res.render('meme', {meme: meme});
+
     } else {
         res.render('meme_not_found', {id: req.params.memeId});
     }
